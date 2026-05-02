@@ -22,3 +22,5 @@ Plantify simplifies forest fire data into a single interactive platform:
 🌱 Tracks trees replanted
 📊 Shows recovery progress
 ⚠️ Estimates wildfire risk levels
+
+Note: This is only a prototype, the data used in the program are unrepresentative.
