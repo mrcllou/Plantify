@@ -24,10 +24,10 @@ public class Data {
 		Random r = new Random();
 		double randNum = (r.nextInt(10) + 1) / 10.0;
 		if(randNum <= 0.5) {
-			return "Forest fire less likely";
+			return "unlikely";
 		}
 		else {
-			return "Forest fire possible";
+			return "possible";
 		}
 	}
 }
