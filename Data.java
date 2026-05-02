@@ -12,12 +12,12 @@ public class Data {
 	}
 
 	public double getArea() {
-		return treeLossAcres;
+		return ((int) (treeLossAcres * 100)) / 100.0;
 	}
 
 	public double cost() {
 		double cost = 36.75;
-		return cost * treeLossAcres;
+		return ((int) (cost * treeLossAcres * 100)) / 100.0;
 	}
 
 	public String probability() {
