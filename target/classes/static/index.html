@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Java Web UI</title>
+</head>
+<body>
+<h1>Java Backend Test</h1>
+
+<input id="userInput" placeholder="Type something">
+<button id="runBtn">Run Java Logic</button>
+
+<p id="result"></p>
+
+<script>
+document.getElementById("runBtn").onclick = () => {
+    const input = document.getElementById("userInput").value;
+
+    fetch(`/api/run?input=${encodeURIComponent(input)}`)
+        .then(res => res.text())
+        .then(text => {
+            document.getElementById("result").innerText = text;
+        });
+};
+</script>
+
+</body>
+</html>
